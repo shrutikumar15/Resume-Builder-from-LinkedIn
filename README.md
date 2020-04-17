@@ -1,7 +1,7 @@
 # Resume-Builder-from-LinkedIn
 LinkedIn Scraper - Given the URL of a LinkedIn profile, it gets the Name, Title, Education History, Project History, Employment History, Certifications, Project, Skills, Accomplishments and Volunteering History from the LinkedIn Profile.
 
-Editing Scraped Data - Using Javascript HTML and CSS at the front end, the scraped data is edited.
+Editing Scraped Data - Using JavaScript HTML and CSS at the front end, the scraped data is edited.
 
 Converting json data to docx/pdf - The edited data is now converted to a resume in docx/pdf form. 
 
