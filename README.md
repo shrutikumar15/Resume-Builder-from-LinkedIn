@@ -1,5 +1,5 @@
 # Resume-Builder-from-LinkedIn
-Builds Resume by scraping information from LinkedIn using Flask 
+Builds Resume by scraping data from LinkedIn using Flask.
 
 ## Libraries Used:
 
