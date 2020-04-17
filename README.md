@@ -1,7 +1,7 @@
 # Resume-Builder-from-LinkedIn
 Builds Resume by scraping data from LinkedIn using Flask.
 
-## Libraries Used:
+## Libraries Used
 
 > BeautifulSoup
 
@@ -21,7 +21,7 @@ Builds Resume by scraping data from LinkedIn using Flask.
 
 > os
 
-## Requirements:
+## Requirements
 
 > Python 3.x
 
@@ -92,5 +92,5 @@ pip install Flask
 <img width="959" alt="form8" src="https://user-images.githubusercontent.com/41858958/79599705-9ac97380-8103-11ea-8204-a0a8397b2f67.PNG">
 <img width="960" alt="form9" src="https://user-images.githubusercontent.com/41858958/79599707-9b620a00-8103-11ea-970c-758842429b8e.PNG">
 
-## Output:
+## Output
 <img width="406" alt="resume2" src="https://user-images.githubusercontent.com/41858958/79599725-a4eb7200-8103-11ea-9d75-200e3dbcf7e7.PNG">
