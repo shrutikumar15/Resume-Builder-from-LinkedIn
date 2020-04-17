@@ -31,7 +31,7 @@
 
 ### Clone
 Clone this repo to your local machine using 
-> git clone https://github.com/premnagdeo/Python-LinkedIn-Information-Scraper.git
+> git clone https://github.com/shrutikumar15/Resume-Builder-from-LinkedIn.git
 
 ### Chrome Web Driver
 The Chrome Driver can be found here: https://chromedriver.chromium.org/downloads
