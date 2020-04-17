@@ -27,8 +27,12 @@
 
 > time
 
-## Libraries Used for creation of docx:
-// shruti append your libraries here
+## Libraries Used for creation of docx/pdf:
+> docx
+
+> docx2pdf
+
+> json
 
 ## Requirements:
 
@@ -38,7 +42,7 @@
 
 > chromedriver 
 
-//append requirements here
+> Microsoft Office
 
 ## Installation
 
@@ -58,6 +62,16 @@ pip install beautifulsoup4
 Install Selenium
 ```
 pip install selenium
+```
+
+Install docx
+```
+pip install docx
+```
+
+Install docx2pdf
+```
+pip install docx2pdf
 ```
 
 
