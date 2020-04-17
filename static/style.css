@@ -1,0 +1,383 @@
+/*-------------------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-sizing: inherit;
+    
+}
+
+html,body{
+    background-color: rgb(0, 0, 0);
+    color: #000000;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------*/
+/* HEADER */
+/*-------------------------------------------------*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+     }
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    filter: invert(100);
+}
+
+/* main nav */
+.main-nav{
+    letter-spacing: 1px;
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: white ;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+
+    transition: border-bottom 0.2s ;
+
+    border: 1px solid transparent;
+    margin-right: 15px;
+    -webkit-transition: border-bottom 0.2s
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid white;
+}
+
+
+
+.main-nav li:hover
+/*.main-nav li a:active*/{
+    border-bottom:2px solid rgb(14, 128, 235);
+    background-color: rgb(14, 128, 235);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*-----------------s--------------------------------*/
+/* HEADINGS */
+/*-------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4{
+
+    font-weight: 300;
+    text-transform: uppercase;
+      font-size: 110%;
+    margin-bottom: 15px;
+}
+
+
+h4{
+    
+    font-size: 50px;
+    margin-left: 400px;
+    font-weight: 300;
+    padding-top: 450px;
+    color: #ffffff;
+}
+
+
+
+
+/*-------------------------------------------------*/
+/* BUTTONS */
+/*-------------------------------------------------*/
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  margin-left: 150px;
+ border: 1px solid rgb(14, 128, 235);
+ font-weight:300;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(14, 128, 235);
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+ border: 1px solid  rgb(14, 128, 235);
+    r-spacing: 1px;
+
+}
+
+h1{
+     margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+ h2:after {
+    display: block;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+ 
+
+
+
+/*-------------------------------------------------*/
+/* sign up*/
+/*-------------------------------------------------*/
+
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+
+
+    }
+
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        border-radius: 15px;
+        background-color: darkcyan;
+        width: 30%;
+        height: 24%;
+        color: black;
+    }
+
+    .hand{font-family: "Montserrat", sans-serif;
+    color:black;
+    margin-bottom: 10px;
+   }
+
+
+    .cont {
+        padding: 5px;
+    }
+input[type=text],
+    input[type=password] {
+        font-size: 16px;
+        width: 90%;
+        padding: 10px 20px;
+        margin-top: 8px ;
+        margin-bottom: 15px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        
+    }
+
+    .hand{font-family: "Montserrat", sans-serif;
+    color:#000000;
+    }
+
+
+
+    /*set a style for the buttons*/
+    button {
+        background-color: rgb(14, 128, 235);
+        color: white;
+        padding: 15px 18px;
+        margin-left: 0px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+    }
+
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.5;
+    }
+
+    /*set extra style for the cancel button*/
+    .cancelbtn {
+        width: auto;
+        padding: 5px 18px;
+        background-color: rgb(14, 128, 235);
+        float: right;
+    }
+
+
+
+    /*set padding to the container*/
+    .cont {
+        padding: 5px;
+    }
+
+    /*set the forgot password text*/
+    span.psw {
+        float:right;
+        padding-top: 10px;
+    }
+
+    /*set the Modal background*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
+        text-align: center;
+
+    }
+
+    /*style the model content box*/
+    .modal-content {
+        background-color: aliceblue;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888 ;
+        width: 37%;
+        height: 35%;
+        padding-top: 10px;
+    }
+    .modal-content1 {
+        background-color: #f1f1f1;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888 ;
+        width: 35%;
+        height: 90%;
+        padding-top: 10px;
+    }
+
+    /*style the close button*/
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #0000;
+        font-size: 35px;
+        font-weight: bold;
+        float: right;
+    }
+
+     *:before, *:after {
+        box-sizing: inherit;
+      }
+      
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+      
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      .title {
+        color: rgb(255, 255, 255);
+      }
+      
+      .url{
+          border-radius: 5px;
+          margin-bottom: 10px;
+      }
+      
+      
+      
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      
+
+

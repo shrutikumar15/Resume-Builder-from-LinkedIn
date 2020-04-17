@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/formcss.css?u={{ last_updated }}">
+  <title>Resume Builder</title>
+</head>
+<!-- multistep form -->
+<body onload="LoadingFunc()">
+  
+  <label class="hidden_data" name="hidden_basic" id="hidden_basic">8</label>
+  <label class="hidden_data" name="hidden_education" id="hidden_education">0</label>
+  <label class="hidden_data" name="hidden_projects" id="hidden_projects">0</label>
+  <label class="hidden_data" name="hidden_certifications" id="hidden_certifications">0</label>
+  <label class="hidden_data" name="hidden_experience" id="hidden_experience">0</label>
+  <label class="hidden_data" name="hidden_skils" id="hidden_skils">0</label>
+  <label class="hidden_data" name="hidden_volunteer" id="hidden_volunteer">0</label>
+  <label class="hidden_data" name="hidden_accomplishments" id="hidden_accomplishments">0</label>
+  <label class="hidden_data" name="hidden_hobbies" id="hidden_hobbies">0</label>
+  
+
+<form id="msform" action="{{ url_for('handle_data') }}" method="post">
+  <input type="text" id="hidden_basic1" name="hidden_basic1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_education1" name="hidden_education1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_projects1" name="hidden_projects1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_certifications1" name="hidden_certifications1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_experience1" name="hidden_experience1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_skils1" name="hidden_skils1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_volunteer1" name="hidden_volunteer1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_accomplishments1" name="hidden_accomplishments1" placeholder="" class="hidden_data hide" />
+  <input type="text" id="hidden_hobbies1" name="hidden_hobbies1" placeholder="" class="hidden_data hide" />
+
+
+
+
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active" id="p1">Personal Details</li>
+      <li id="p2">Education</li>
+      <li id="p3">Projects</li>
+      <li id="p4">Certifications</li>
+      <li id="p5">Experience</li>
+      <li id="p6">Skills</li>
+      <li id="p7">Volunteer</li>
+      <li id="p8">Accomplishments</li>
+      <li id="p9">Hobbies</li>
+    </ul>
+    <!-- fieldsets -->
+    <!--basic info form-->
+    <div  id="f1">
+    <fieldset >
+      <h2 class="fs-title">Personal Details</h2>
+      <div class="flex-container">
+        <div class="labeldiv"><label>First Name:</label></div>
+       <div><input type="text" id="fname" name="fname" placeholder="" class="fill-width" /></div>
+      </div> 
+      <div class="flex-container">
+       <div class="labeldiv"><label>Last Name:</label></div>
+       <div ><input type="text" id="lname"name="lname" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label> Headline:</label></div>
+        <div ><input type="text" id="headline" name="headline" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label>LinkenIn:</label></div>
+        <div > <input type="text" id="linkedin" name="linkedin" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label>Email:</label></div>
+        <div > <input type="text" id="email" name="email" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label>Phone:</label></div>
+        <div > <input type="text" id="phone" name="phone" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label>Age:</label></div>
+        <div > <input type="text" id="age" name="age" placeholder="" /></div>
+      </div>
+      <div class="flex-container">
+        <div class="labeldiv"><label>GitHub:</label></div>
+        <div > <input type="text" id="github" name="github" placeholder="" /></div>
+      </div>
+     
+      <div class=flex-container>
+      <input type="button" name="next" class="next action-button" onclick="clickform2()" value="Next" />
+      </div>
+    </fieldset>
+  </div>
+  <!--education_info_form-->
+  <div id="f2">
+    <fieldset id="f22">
+      <h2 class="fs-title">Education Details</h2>
+      
+    </fieldset>
+    
+  </div>
+  <div id="f3">
+      <fieldset id="f33">
+        <h2 class="fs-title">Projects</h2>
+      </fieldset>
+  </div>
+  <div id="f4">
+    <fieldset id="f44">
+      <h2 class="fs-title">Certifications</h2>
+    </fieldset>
+  </div>
+  <div id="f5">
+    <fieldset id="f55">
+      <h2 class="fs-title">Experience</h2>
+    </fieldset>
+  </div>
+  <div id="f6">
+    <fieldset id="f66">
+      <h2 class="fs-title">Skills</h2>
+    </fieldset>
+  </div>
+  <div id="f7">
+    <fieldset id="f77">
+      <h2 class="fs-title">Volunteer Experience</h2>
+    </fieldset>
+  </div>
+  <div id="f8">
+    <fieldset id="f88">
+      <h2 class="fs-title">Accomplishments</h2>
+    </fieldset>
+  </div>  
+  <div id="f9">
+    <fieldset id="f99">
+      <h2 class="fs-title">Hobbies</h2>
+    </fieldset>
+  </div>  
+</form>
+  <script type="text/javascript">
+     var json_string = JSON.parse('{{json_string | tojson | safe}}') ;
+  </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/scripts/formscripts.js?u={{ last_updated }}"></script>
+</body>
+</html>

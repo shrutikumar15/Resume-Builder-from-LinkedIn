@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Resume Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/style.css?u={{ last_updated }}">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="row">
+          <img src="../static/logo.png" alt="logo" class="logo">
+          <ul class="main-nav">
+            <li><a href="#id0">Home </a></li>
+            <li><a href="#id1">About Us</a></li>
+            <li><a href="#id4" onclick="document.getElementById('id01').style.display='block'" >Sign up </a></li>
+          </ul>
+        </div>
+        <div id="id01" class="modal">
+          <form method="post" class="modal-content1 animate" action="">
+            <div class="cont">
+              <div class="hand"><p allign="center">SIGN UP</p>
+              </div>
+              <input type="text" placeholder="Enter Firstname" name="fname" required>
+              <input type="text" placeholder="Enter Lastname" name="lname" required><br>
+              <input type="text" placeholder="Enter Email id" name="email" required>
+              <input type="password" placeholder="Enter Password" name="psw" required><br>
+              <input type="password" placeholder="Confirm Password" name="psw" required>
+              <input type="text" placeholder="Enter Contact no." name="contact" required>
+            </div>
+              <div class="cont" style="background-color:#f1f1f1">
+                <a href="homepage.html"><button type="submit">Signup</button></a>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> <br>
+                <span class="psw" >Already Registered? <a id="switchForm" href="#"  onclick="document.getElementById('id02').style.display='block'" >Login</a></span>
+            </div>
+          </form>
+          <div id="id02" class="modal">
+            <form id="login_form" class="modal-content" >
+              <div class="cont">
+                <div class="hand"><p allign="center">SIGN IN</p></div><hr>
+                  <input type="text" placeholder="Enter registered email id" name="lemail" required>
+                  <input type="password" placeholder="Enter Password" name="lpsw" required><br>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="submit">Login</button>
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+      </nav>
+      <div class="hero-text-box ">
+        <h1>Got a LinkedIn Profile?<br>Build your Resume For Free!</h1>
+        <a class="btn btn-ghost" href="#"  onclick="document.getElementById('id03').style.display='block'"><b>Build Now</b></a>
+      </div>
+      <div id="id03" class="modal">
+        <form method="POST" action="{{ url_for('form') }}" id="build_form" class="modal-content">
+          <div class="cont">
+            <div class="hand"><p allign="center">Please enter the URL of your LinkedIn profile!</p>
+            </div>
+            <input type="text" class="url" name="profilelink" allign="right" placeholder=""  required >
+          </div>
+          <button type="submit" >OK</button>
+          <button type="button" onclick="document.getElementById('id03').style.display='none'">Cancel</button> <br>
+        </form>
+       
+
+    </header>
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row" id="id1">
+      <div class="column">
+        <div class="card">
+          <img class="one" src="../static/prem.jpeg" alt="Pdem" height="250" width="390" allign="center">
+          <div class="container">
+            <h2>Prem Nagdeo</h2>
+            <p class="title">Co-Founder</p>
+            <p style="color:#ffff">premnagdeo@gmail.com</p>
+          </div>
+        </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img  class="two" src="../static/shruti.jpeg" alt="Shrutz" width="390" height="250">
+            <div class="container">
+              <h2>Shruti Kumar</h2>
+              <p class="title">Co-Founder</p>
+              <p style="color:#ffff">shrutikumar.001@gmail.com</p>
+            </div>
+          </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img class="three" src="../static/sneha.jpg" alt="Sneh" width="390" height="250">
+          <div class="container">
+            <h2>Sneha Rohra</h2>
+            <p class="title">Co-Founder</p>
+            <p style="color:#ffff">sneha.rohra99@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+                 
