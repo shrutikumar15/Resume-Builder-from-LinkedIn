@@ -25,9 +25,9 @@ def form():
           #print("yes")
           link = request.form['profilelink']
           #print(link)  
-     #json_string1 = linkedin_scraper.linkedin_scraper1(link)
-     with app.open_resource('static/scraped_data.json') as f:
-          json_string1 = json.load(f)
+     json_string1 = linkedin_scraper.linkedin_scraper1(link)
+     #with app.open_resource('static/scraped_data.json') as f:
+          #json_string1 = json.load(f)
      #print (json_string1)
      return render_template("formhtml.html",json_string=json_string1,last_updated=dir_last_updated('static'))
 
