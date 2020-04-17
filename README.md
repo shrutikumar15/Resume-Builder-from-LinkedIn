@@ -86,6 +86,13 @@ pip install Flask
 
 ## Usage
 
-//details about how to use the website
+* Edit the 'config.txt' file and add your linkedin username and password
+> This is required because linkedin requires a login before you can view a profile
+ 
+* Run the Python Program
+> python formflask.py
+
+
+* Output of the program is saved in pdf file named 'output.pdf'.
 
 
