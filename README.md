@@ -1,6 +1,8 @@
 # Resume-Builder-from-LinkedIn
 
 //Stuff about creating resume
+<img width="923" alt="11" src="https://user-images.githubusercontent.com/41858958/79599995-10354400-8104-11ea-89da-34c1b4f9c94c.png">
+
 <img width="948" alt="form12" src="https://user-images.githubusercontent.com/41858958/79599693-9735ec80-8103-11ea-8810-44a1bd35fb24.PNG">
 <img width="946" alt="form 3" src="https://user-images.githubusercontent.com/41858958/79599696-98671980-8103-11ea-8de1-4c77d3e12a4d.PNG">
 <img width="948" alt="form2" src="https://user-images.githubusercontent.com/41858958/79599697-98ffb000-8103-11ea-8ce3-dbb51c03bdc1.PNG">
