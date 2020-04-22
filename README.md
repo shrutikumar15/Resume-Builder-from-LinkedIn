@@ -77,10 +77,12 @@ pip install Flask
 
 * Enter the link of the profile that is to be scraped.
 
-* Output of the program is saved in pdf file named 'output.pdf'.
+* Output of the program is saved in pdf file named 'output.pdf'
 
 ## Screenshots
 <img width="923" alt="11" src="https://user-images.githubusercontent.com/41858958/79599995-10354400-8104-11ea-89da-34c1b4f9c94c.png">
+<img width="946" alt="link" src="https://user-images.githubusercontent.com/41858958/79861038-571b8600-83f1-11ea-9833-d5122a1e40fe.PNG">
+
 <img width="949" alt="form11" src="https://user-images.githubusercontent.com/41858958/79599708-9b620a00-8103-11ea-955d-88e0c379f904.PNG">
 <img width="948" alt="form12" src="https://user-images.githubusercontent.com/41858958/79599693-9735ec80-8103-11ea-8810-44a1bd35fb24.PNG">
 <img width="948" alt="form2" src="https://user-images.githubusercontent.com/41858958/79599697-98ffb000-8103-11ea-8ce3-dbb51c03bdc1.PNG">
